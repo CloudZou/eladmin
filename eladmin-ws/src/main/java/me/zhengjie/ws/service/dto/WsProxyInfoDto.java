@@ -1,0 +1,48 @@
+/*
+*  Copyright 2019-2020 Zheng Jie
+*
+*  Licensed under the Apache License, Version 2.0 (the "License");
+*  you may not use this file except in compliance with the License.
+*  You may obtain a copy of the License at
+*
+*  http://www.apache.org/licenses/LICENSE-2.0
+*
+*  Unless required by applicable law or agreed to in writing, software
+*  distributed under the License is distributed on an "AS IS" BASIS,
+*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*  See the License for the specific language governing permissions and
+*  limitations under the License.
+*/
+package me.zhengjie.ws.service.dto;
+
+import lombok.Data;
+import java.io.Serializable;
+
+/**
+* @website https://eladmin.vip
+* @description /
+* @author eladmin
+* @date 2023-11-25
+**/
+@Data
+public class WsProxyInfoDto implements Serializable {
+
+    private Integer id;
+
+    private Integer groupId;
+
+    /** 分组名称 */
+    private String groupName;
+
+    /** 代理账号 */
+    private String proxyUsername;
+
+    /** 代理地址 */
+    private String proxyAddress;
+
+    /** 代理端口 */
+    private String proxyPort;
+
+    /** 代理密码 */
+    private String proxyPassword;
+}
